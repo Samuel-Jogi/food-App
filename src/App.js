@@ -18,38 +18,32 @@ const Body = () => {
         <button>Search</button>
       </div>
       <div className="card-container">
-        <ResCards />
-        <ResCards />
-        <ResCards />
-        <ResCards />
-        <ResCards />
-        <ResCards />
-        <ResCards />
-        <ResCards />
-        <ResCards />
-        <ResCards />
-        <ResCards />
-        <ResCards />
-        <ResCards />
-        <ResCards />
-        <ResCards />
-        <ResCards />
-        <ResCards />
-        <ResCards />
+        <ResCards resName="Samuel Foods" cuisineName="Burger Delicious" />
+        <ResCards resName="KFC Foods" cuisineName="French Fries" />
+        <ResCards resName="Orange Foods" cuisineName="Drinks Delicious" />
+        <ResCards resName="BBC Foods" cuisineName="Mutton Biryani" />
+        <ResCards resName="Taj hotel Foods" cuisineName="Desets Delicious" />
+        <ResCards resName="Kerala Foods" cuisineName="cocountOil Delicious" />
+        <ResCards resName="Andhra Biryani" cuisineName="Spicy foods" />
+        <ResCards resName="Hyderabad Biryani" cuisineName="Haleem special" />
+        <ResCards resName="Guntur Karam" cuisineName="Red chilli hot" />
+        <ResCards resName="Mumbai vadaPav" cuisineName="Street food" />
       </div>
     </div>
   );
 };
 
-const ResCards = () => {
+
+const ResCards = (props) => {
   return (
     <div className="res-card">
       <img
         className="restCard"
         src="https://cdn.britannica.com/98/235798-050-3C3BA15D/Hamburger-and-french-fries-paper-box.jpg"
       />
-      <h3>Samuel Foods</h3>
-      <h4>Biryani North Indian</h4>
+
+      <h3>{props.resName}</h3>
+      <h4>{props.cuisineName}</h4>
       <h4>4.4 stars</h4>
       <h4>30 minutes</h4>
     </div>
