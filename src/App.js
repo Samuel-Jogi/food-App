@@ -33,6 +33,7 @@ const Body = () => {
   );
 };
 
+
 const ResCards = (props) => {
   return (
     <div className="res-card">
@@ -40,6 +41,7 @@ const ResCards = (props) => {
         className="restCard"
         src="https://cdn.britannica.com/98/235798-050-3C3BA15D/Hamburger-and-french-fries-paper-box.jpg"
       />
+
       <h3>{props.resName}</h3>
       <h4>{props.cuisineName}</h4>
       <h4>4.4 stars</h4>
